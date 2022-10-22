@@ -1,0 +1,21 @@
+.text-center{
+	background-color: skyblue;
+	padding: 20px 20px 20px 20px;
+	border-radius: 10px;
+
+}
+body{
+	width: 100%;
+}
+.form-control {
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+.row_venta{
+	margin-top: 15px;
+}
+.col-6{
+	background-color: lightgreen;
+	border-radius: 10px;
+	padding: 10px 10px 10px 10px;
+}

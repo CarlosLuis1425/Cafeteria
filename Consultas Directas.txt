@@ -1,0 +1,15 @@
+
+Realizar una consulta que permita conocer cuál es el producto que más stock tiene.
+
+SELECT *,  MAX(stock)AS stockmax 
+FROM producto 
+GROUP BY id_producto
+ORDER BY stockmax DESC LIMIT 1
+
+Realizar una consulta que permita conocer cuál es el producto más vendido.
+
+SELECT producto.* , Sum(venta.cantidad) AS Cantidadvendida
+FROM venta
+INNER JOIN producto ON id_producto = venta.producto
+GROUP BY venta.producto
+ORDER BY Cantidadvendida DESC LIMIT 1
